@@ -4,4 +4,5 @@
 1、腾讯软件中心  
 https://pc.qq.com/
 
-2、
+2、文件转换，超级PDF
+https://xpdf.net/
