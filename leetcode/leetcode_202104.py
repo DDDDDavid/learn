@@ -27,7 +27,6 @@ class Solution:
 
 
 #2、两数相加
-
 #用原来的链表
 class ListNode:
      def __init__(self, val=0, next=None):
@@ -77,8 +76,22 @@ class Solution:
             tmp.next = ListNode(num)
             tmp = tmp.next
         return ret.next
-
+    
+#3、无重复字符的最长子串
+#哈希map遍历
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        k, res, c_dict =  -1, 0, {}
+        for i ,c in enumerate(s):
+            if c in c_dict and c_dict[c] > k:
+                k = c_dict[c]
+                c_dict[c] = i
+            else:
+                c_dict[c] = i
+                res = max(res, i-k)
+        return res
                     
+
         
         
 

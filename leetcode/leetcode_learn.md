@@ -91,3 +91,23 @@ class Solution:
             tmp = tmp.next
         return ret.next
 ```
+20210413
+## 3. 无重复字符的最长子串
+给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+```python
+#3、无重复字符的最长子串
+#哈希map遍历
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        k, res, c_dict =  -1, 0, {}
+        for i ,c in enumerate(s):
+            if c in c_dict and c_dict[c] > k:
+                k = c_dict[c]
+                c_dict[c] = i
+            else:
+                c_dict[c] = i
+                res = max(res, i-k)
+        return res
+```
+
+ 
