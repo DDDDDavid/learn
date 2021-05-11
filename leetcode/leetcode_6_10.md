@@ -115,3 +115,45 @@ class Solution:
     def myAtoi(self, s: str) -> int:
         return max(min(int(*re.findall('^[\+\-]?\d+', s.lstrip())), 2**31 - 1), -2**31)
 ```
+
+## 9.回文数
+给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。
+
+回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。例如，121 是回文，而 123 不是。
+
+进阶：你能不将整数转为字符串来解决这个问题吗？
+
+```python
+#str()函数简单粗暴
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        s = str(x)
+        n = len(s)
+        for i in range(n):
+            if s[i] == s[n-1-i]:
+                pass
+            else:
+                return False
+        return True
+
+#翻转数字比较
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0 or (x % 10 == 0 and x != 0):
+            return False
+        revertedNumber = 0
+        while x > revertedNumber:
+            revertedNumber = revertedNumber * 10 + x % 10
+            x //= 10
+        return x == revertedNumber or x == revertedNumber // 10
+```
+
+## 10. 正则表达式匹配
+给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
+
+'.' 匹配任意单个字符
+'*' 匹配零个或多个前面的那一个元素
+所谓匹配，是要涵盖 整个 字符串 s的，而不是部分字符串。
+```python
+
+```
