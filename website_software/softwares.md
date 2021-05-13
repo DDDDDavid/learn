@@ -124,6 +124,20 @@
 其他下载地址|[腾讯软件中心](https://pc.qq.com/)
 时间|20210512
 
+#### 5、Xmind
+指标|内容
+-|-
+名称|Xmind
+是否免费|是
+有无会员或广告|有会员有广告
+功能性|强大
+仍在更新维护|是
+评价|4
+评分|思维导图软件
+官方下载地址|[https://www.xmind.cn/](https://www.xmind.cn/)
+其他下载地址|[腾讯软件中心](https://pc.qq.com/)
+时间|20210512
+
 ## 三、娱乐软件
 ### 游戏平台
 1、steam
@@ -162,6 +176,20 @@
 评价|一体化远程控制管理工具软件
 评分|4
 官方下载地址|[https://sunlogin.oray.com/download/](https://sunlogin.oray.com/download/)
+其他下载地址|[腾讯软件中心](https://pc.qq.com/)
+时间|20210512
+
+#### 2、百度网盘
+指标|内容
+-|-
+名称|百度网盘
+是否免费|是
+有无会员或广告|有广告
+功能性|强大
+仍在更新维护|是
+评价|网盘文件，资源较多
+评分|4
+官方下载地址|[http://pan.baidu.com/download](http://pan.baidu.com/download)
 其他下载地址|[腾讯软件中心](https://pc.qq.com/)
 时间|20210512
 
